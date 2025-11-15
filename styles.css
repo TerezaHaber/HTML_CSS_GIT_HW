@@ -14,7 +14,7 @@
   --bg-light: #fafafa;
 }
 
-/* ---------- ZÁKLAD ---------- */
+
 body {
   font-family: 'Biryani', sans-serif;
   margin: 0;
@@ -36,7 +36,7 @@ a:hover {
   color: var(--coral);
 }
 
-/* ---------- HEADER / HERO ---------- */
+
 header.header {
   background: linear-gradient(rgba(74,52,36,0.85), rgba(74,52,36,0.85)),
               url("images/hero-bg.jpg") center/cover no-repeat;
@@ -69,7 +69,7 @@ header.header {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* ---------- SEKCE ---------- */
+
 .section {
   padding: 80px 20px;
   max-width: 1000px;
@@ -81,7 +81,7 @@ header.header {
   margin-bottom: 30px;
 }
 
-/* ---------- O MNĚ ---------- */
+
 .o-mne {
   background-color: var(--beige);
   border-radius: 12px;
@@ -95,7 +95,7 @@ header.header {
   margin-top: 25px;
 }
 
-/* ---------- CO MĚ BAVÍ ---------- */
+
 .zajmy {
   background-color: var(--peach);
   color: var(--text-dark);
@@ -128,19 +128,18 @@ header.header {
   transform: scale(1.05);
 }
 
-/* ---------- PŘÍRODA ---------- */
-.nature {
+.priroda {
   background-color: var(--coral);
   color: var(--text-light);
   text-align: center;
 }
 
-.nature p {
+.priroda p {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.nature-photo {
+.priroda-photo {
   width: 100%;
   border-radius: 12px;
   margin-top: 30px;
@@ -148,27 +147,27 @@ header.header {
 }
 
 /* ---------- KONTAKT ---------- */
-.contact {
+.kontakt {
   background-color: var(--dark-brown);
   color: var(--text-light);
   text-align: center;
   padding: 100px 20px;
 }
 
-.contact ul {
+.kontakt ul {
   list-style: none;
   padding: 0;
 }
 
-.contact a {
+.kontakt a {
   color: var(--peach);
   font-weight: 400;
 }
-.contact a:hover {
+.kontakt a:hover {
   color: var(--beige);
 }
 
-/* ---------- FOOTER ---------- */
+
 .footer {
   background-color: var(--dark-brown);
   color: var(--text-light);
@@ -177,7 +176,7 @@ header.header {
   font-size: 0.9rem;
 }
 
-/* ---------- RESPONSIVE ---------- */
+
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column;
