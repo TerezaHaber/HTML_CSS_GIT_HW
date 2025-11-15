@@ -1,16 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <title>Terka Haber - Moje cesta k testování</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <main class="content-wrapper">
+        <header id="header" class="header">
+            <div class="header-wrapper">
+                <div class="header-text">
+                    <h1>Ahoj, jsem Terka Haber</h1>
+                    <p class="motto">
+                        Studentka Digitální akademie: Testování od Czechitas a nadšená hledačka smyslu v práci i životě
+                    </p>
+                </div>
+                <div class="header-photo-wrapper">
+                    <img src="fotky/beh2.jpg" alt="Terka Haber" class="header-photo">
+                </div>
+            </div>
 
-    <h1>Welcome to My Simple Page</h1>
+            <nav class="nav-links">
+                <a href="#o-mne">O mně</a>
+                <a href="#zajmy">Co mě baví</a>
+                <a href="#priroda">Příroda</a>
+                <a href="#kahoot">Kahoot Queen</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </header>
 
-    <p>This is a paragraph of text. The colors and font of this text are being controlled by the linked external CSS file, 'styles.css'.</p>
+        <section id="o-mne" class="o-mne section">
+            <h2>👩‍💻 O mně 👩‍💻</h2>
+            <p>Jsem Terka a momentálně studuji <strong>Digitální akademii Testování</strong> od Czechitas.
+                Do tohoto kurzu jsem se pustila, protože mě testování opravdu baví a vidím v něm smysl - pomáhám tvořit
+                něco
+                nového a zlepšovat to.
+            </p>
+            <p>Cítila jsem, že potřebuji změnu. V testování vidím příležitost spojit pečlivost, logiku a kreativitu.</p>
+        </section>
 
+        <section id="zajmy" class="zajmy section">
+            <h2>📚 Co mě baví 📚</h2>
+            <p>Ve volném čase miluji <strong>čtení</strong>. Ráda bych řekla, že čtu seberozvojové knihy, ale pravda je,
+                že
+                nejvíce mě vtáhnou
+                do děje <em>detektivky</em> a taky <em>young adult</em> a <em>fantasy</em>.
+            </p>
+            <p>Kromě čtení se snažím být aktivní - běhám (i když je to spíše šnečí tempo), cvičím jogu a občas i s
+                činkami.
+            </p>
+            <div class="gallery">
+                <img src="fotky/beh3.jpg" alt="Terka běhá" class="gallery-photo">
+                <img src="fotky/kniha.jpg" alt="Terka čte knihu" class="gallery-photo">
+                <img src="fotky/kolo.jpg" alt="Terka na kole" class="gallery-photo">
+            </div>
+        </section>
+
+        <section id="priroda" class="priroda section">
+            <h2>🌲 Miluju přírodu 🌲</h2>
+            <p>Nejvíc energie mi dává čas venku. Miluju procházky se svým pejskem, kdy prolézáme les a občas
+                vyděsíme srnky (a někdy i divočáky).
+                Příroda mě nabíjí, čistím si v ní hlavu a pomáhá mi s novými nápady i rovnováhou.
+            </p>
+            <div class="gallery-nature">
+                <img src="fotky/priroda_Bubak.jpg" alt="Terka v přírodě" class="nature-photo">
+                <img src="fotky/priroda_Bubak3.jpg" alt="Procházka se psem" class="nature-photo">
+                <img src="fotky/priroda_Bubak4.jpg" alt="Procházka v lese" class="nature-photo">
+            </div>
+        </section>
+
+        <section id="kahoot" class="kahoot section">
+            <h2>👑 Kahoot Queen 👑</h2>
+            <p>
+                Díky sledování <strong>Kobry 11</strong> v mládí mám vražedné tempo - takže když přijde na Kahoot,
+                klikám bleskově, analyzuju rychle a soupeři často nestíhají.
+            </p>
+            <div class="gallery">
+                <img src="fotky/kahoot1.jpg" alt="Výhra v Kahootu" class="gallery-photo">
+                <img src="fotky/kahoot2.jpg" alt="1. místo v Kahootu" class="gallery-photo">
+                <img src="fotky/kahoot3.jpg" alt="Kahoot vítězství" class="gallery-photo">
+            </div>
+        </section>
+
+        <section id="kontakt" class="kontakt section">
+            <h2>📬 Kontakt 📬</h2>
+            <p>Pokud si chceš popovídat, třeba o testování, knihách nebo jen tak - budu ráda!</p>
+            <ul>
+                <li>Email: <a href="mailto:haber.tereza@gmail.com">haber.tereza@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/tereza-haber/" target="_blank">Tereza Haber</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <p>&copy; 2025 Terka Haber | Vytvořeno pro Michala 😅</p>
+    </footer>
 </body>
+
 </html>
