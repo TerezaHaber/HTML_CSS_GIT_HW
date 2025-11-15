@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Biryani:wght@200;300;400&display=swap');
-
 
 :root {
   --dark-brown: #4a3424;
@@ -14,7 +12,7 @@
   --bg-light: #fafafa;
 }
 
-
+/* ------------------------ ZÁKLAD ------------------------ */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -32,17 +30,18 @@ a {
   color: var(--terracotta);
   text-decoration: none;
 }
+
 a:hover {
   color: var(--coral);
 }
 
+/* ------------------------ HEADER ------------------------ */
 header.header {
   background-color: var(--dark-brown);
   color: var(--text-light);
   padding: 100px 40px 60px;
 }
 
-/* Wrapper pro rozložení text + fotka vedle sebe */
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -53,7 +52,6 @@ header.header {
   gap: 40px;
 }
 
-/* Levá část s textem */
 .header-text {
   flex: 1 1 50%;
   text-align: left;
@@ -72,7 +70,6 @@ header.header {
   line-height: 1.6;
 }
 
-
 .header-photo-wrapper {
   flex: 1 1 40%;
   display: flex;
@@ -87,7 +84,7 @@ header.header {
   object-fit: cover;
 }
 
-
+/* ------------------------ NAVIGACE ------------------------ */
 .nav-links {
   margin-top: 50px;
   display: flex;
@@ -113,243 +110,91 @@ header.header {
   transform: translateY(-2px);
 }
 
-@media (max-width: 900px) {
-  .header-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-text {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .header-photo-wrapper {
-    flex: 1 1 100%;
-  }
-
-  .header-photo {
-    max-width: 280px;
-  }
-}
-
-.nav-links {
-    color: beige;
-  margin-top: 50px;
+/* ------------------------ HLAVNÍ OBSAH ------------------------ */
+.content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: var(--peach);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 3px;
-}
-
-.nav-links a:hover {
-  color: var(--beige);
-  border-bottom: 2px solid var(--beige);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 900px) {
-  .header-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header-text {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .header-photo-wrapper {
-    flex: 1 1 100%;
-  }
-
-  .header-photo {
-    max-width: 280px;
-  }
-}
-
-.nav-links {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  color: var(--peach);
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 3px;
-}
-
-.nav-links a:hover {
-  color: var(--beige);
-  border-bottom: 2px solid var(--beige);
-  transform: translateY(-2px);
+  flex-direction: column;
+  gap: 80px;
 }
 
 .section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center
+  background-color: var(--bg-light);
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  padding: 60px 50px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Styl pro nadpisy s emoji */
 .section h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center
+  margin-bottom: 25px;
+  color: var(--dark-brown);
 }
 
-
+/* ------------------------ SEKCE BARVY ------------------------ */
 .o-mne {
-  background-color: var(--beige);
-  border-radius: 12px;
-  padding: 60px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  text-align: center
+  background-color: #f8e8dd;
 }
 
 .zajmy {
-  background-color: var(--peach);
-  color: var(--text-dark);
-  padding: 80px 20px;
-  text-align: center
-}
-
-.zajmy p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  text-align: center
-}
-
-.zajmy .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 25px;
-  margin-top: 50px;
-  align-items: stretch; 
-  justify-items: stretch; 
-}
-
-.zajmy .gallery-photo {
-  width: 100%;
-  height: 450px;
-  object-fit: cover;
-  border-radius: 14px;
-  display: block;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-photo:hover {
-  transform: scale(1.04);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-@media (max-width: 768px) {
-  .gallery-photo {
-    height: 280px;
-  }
+  background-color: #f3c4a4;
 }
 
 .priroda {
-  background-color: var(--coral);
+  background-color: #e38b52;
   color: var(--text-light);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.gallery-nature {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 40px;
-}
-
-.gallery-nature .nature-photo {
-  flex: 1 1 calc(33.333% - 15px);
-  max-width: 450px;
-  height: 450px; 
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-nature .nature-photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .kahoot {
-  background-color: #e38b52; /* světlý korálovo-oranžový odstín */
+  background-color: #d4723a;
   color: var(--text-light);
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.kahoot h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  color: var(--text-light);
-  margin-bottom: 25px;
-}
-
-.kahoot p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.kahoot .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.kahoot .gallery-photo {
-  flex: 1 1 calc(25% - 15px);
-  border-radius: 10px;
-  max-height: 200px;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.kahoot .gallery-photo:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .kontakt {
   background-color: var(--dark-brown);
   color: var(--text-light);
-  text-align: center;
-  padding: 100px 20px;
 }
 
+/* ------------------------ GALERIE ------------------------ */
+.gallery,
+.gallery-nature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.gallery-photo,
+.nature-photo {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-photo:hover,
+.nature-photo:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------ KONTAKT ------------------------ */
 .kontakt ul {
   list-style: none;
   padding: 0;
@@ -359,29 +204,52 @@ header.header {
   color: var(--peach);
   font-weight: 400;
 }
+
 .kontakt a:hover {
   color: var(--beige);
 }
 
-
+/* ------------------------ FOOTER ------------------------ */
 .footer {
   background-color: var(--dark-brown);
   color: var(--text-light);
   text-align: center;
   padding: 25px;
   font-size: 0.9rem;
+  margin-top: 60px;
 }
 
+/* ------------------------ RESPONSIVITA ------------------------ */
+@media (max-width: 900px) {
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .header-photo {
+    max-width: 260px;
+  }
+
+  .nav-links {
+    gap: 25px;
+  }
+}
 
 @media (max-width: 768px) {
-  header.header h1 {
-    font-size: 2.2rem;
+  .section {
+    padding: 40px 25px;
   }
-  header.header p {
-    font-size: 1rem;
+
+  .section h2 {
+    font-size: 1.7rem;
   }
-  .nav-links {
-    gap: 20px;
+
+  .gallery-photo,
+  .nature-photo {
+    height: 280px;
   }
 }
-
