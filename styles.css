@@ -42,6 +42,7 @@ header.header {
   padding: 100px 40px 60px;
 }
 
+/* Wrapper pro rozložení text + fotka vedle sebe */
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -52,6 +53,7 @@ header.header {
   gap: 40px;
 }
 
+/* Levá část s textem */
 .header-text {
   flex: 1 1 50%;
   text-align: left;
@@ -70,6 +72,7 @@ header.header {
   line-height: 1.6;
 }
 
+
 .header-photo-wrapper {
   flex: 1 1 40%;
   display: flex;
@@ -78,13 +81,13 @@ header.header {
 
 .header-photo {
   width: 100%;
-  max-width: 380px;
+  max-width: 300px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   object-fit: cover;
 }
 
-/* ---------- NAVIGACE ---------- */
+
 .nav-links {
   margin-top: 50px;
   display: flex;
@@ -110,7 +113,52 @@ header.header {
   transform: translateY(-2px);
 }
 
-/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .header-photo-wrapper {
+    flex: 1 1 100%;
+  }
+
+  .header-photo {
+    max-width: 280px;
+  }
+}
+
+.nav-links {
+    color: beige;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--peach);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+  color: var(--beige);
+  border-bottom: 2px solid var(--beige);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 900px) {
   .header-wrapper {
     flex-direction: column;
@@ -192,26 +240,34 @@ header.header {
   text-align: center
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 40px;
-  justify-content: center;
+.zajmy .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+  align-items: stretch; 
+  justify-items: stretch; 
 }
 
-.gallery-photo {
-   flex: 1 1 calc(33.333% - 15px);
-  max-width: 450px;
-  height: 360px; /* ⬆ vyšší obrázky */
+.zajmy .gallery-photo {
+  width: 100%;
+  height: 450px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  border-radius: 14px;
+  display: block;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery-photo:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .gallery-photo {
+    height: 280px;
+  }
 }
 
 .priroda {
@@ -232,7 +288,7 @@ header.header {
 .gallery-nature .nature-photo {
   flex: 1 1 calc(33.333% - 15px);
   max-width: 450px;
-  height: 360px; /* ⬆ vyšší obrázky */
+  height: 450px; 
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
