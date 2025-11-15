@@ -12,7 +12,7 @@
   --bg-light: #fafafa;
 }
 
-/* ---------- GLOBAL ---------- */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -35,7 +35,7 @@ a:hover {
   color: var(--coral);
 }
 
-/* ---------- LAYOUT ---------- */
+
 .content-wrapper {
   max-width: 1100px;
   margin: 0 auto;
@@ -45,7 +45,7 @@ a:hover {
   gap: 80px;
 }
 
-/* ---------- HEADER ---------- */
+
 header.header {
   display: flex;
   flex-direction: column;
@@ -105,7 +105,7 @@ header.header {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* ---------- NAVIGACE ---------- */
+
 .nav-links {
   margin-top: 40px;
   max-width: 1000px;
@@ -142,7 +142,7 @@ header.header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* ---------- SECTIONS ---------- */
+
 .section {
   background-color: var(--bg-light);
   border-radius: 18px;
@@ -167,7 +167,7 @@ header.header {
   color: var(--dark-brown);
 }
 
-/* ---------- INDIVIDUAL SECTION COLORS ---------- */
+
 .o-mne {
   background-color: #f8e8dd;
 }
@@ -195,7 +195,7 @@ header.header {
   color: var(--peach);
 }
 
-/* ---------- GALLERY ---------- */
+
 .gallery,
 .gallery-nature {
   display: grid;
@@ -220,7 +220,7 @@ header.header {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* ---------- KONTAKT ---------- */
+
 .kontakt ul {
   list-style: none;
   padding: 0;
@@ -235,7 +235,7 @@ header.header {
   color: var(--beige);
 }
 
-/* ---------- FOOTER ---------- */
+
 .footer {
   background-color: var(--dark-brown);
   color: var(--text-light);
@@ -279,3 +279,4 @@ header.header {
     height: 280px;
   }
 }
+
