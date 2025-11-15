@@ -1,7 +1,7 @@
-/* ---------- FONTY ---------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Biryani:wght@200;300;400&display=swap');
 
-/* ---------- PROMĚNNÉ ---------- */
+
 :root {
   --dark-brown: #4a3424;
   --golden: #a97600;
@@ -26,6 +26,7 @@ body {
 h1, h2, h3 {
   font-family: 'Tenor Sans', sans-serif;
   margin: 0 0 20px 0;
+  text-align: center
 }
 
 a {
@@ -54,6 +55,7 @@ header.header {
   font-size: 3rem;
   margin-bottom: 15px;
   color: var(--peach);
+  text-align: center
 }
 
 .header p {
@@ -74,11 +76,13 @@ header.header {
   padding: 80px 20px;
   max-width: 1000px;
   margin: 0 auto;
+  text-align: center
 }
 
 .section h2 {
   font-size: 2rem;
   margin-bottom: 30px;
+  text-align: center
 }
 
 
@@ -87,6 +91,7 @@ header.header {
   border-radius: 12px;
   padding: 60px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  text-align: center
 }
 
 .o-mne-photo {
@@ -100,12 +105,14 @@ header.header {
   background-color: var(--peach);
   color: var(--text-dark);
   padding: 80px 20px;
+  text-align: center
 }
 
 .zajmy p {
   max-width: 800px;
   margin: 0 auto;
   font-size: 1.1rem;
+  text-align: center
 }
 
 .gallery {
